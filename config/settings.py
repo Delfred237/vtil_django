@@ -138,7 +138,7 @@ from pathlib import Path
 STATIC_URL = 'static/'
 
 # AJOUTE CETTE LIGNE ICI :
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Si tu utilises WhiteNoise (recommandé pour Render), assure-toi d'avoir ceci :
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
