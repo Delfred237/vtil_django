@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -125,3 +126,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# AJOUTE CETTE LIGNE ICI :
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+import os
+from pathlib import Path
+
+# ... (le reste de tes settings)
+
+STATIC_URL = 'static/'
+
+# AJOUTE CETTE LIGNE ICI :
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Si tu utilises WhiteNoise (recommandé pour Render), assure-toi d'avoir ceci :
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
