@@ -1,0 +1,17 @@
+mon_env/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.sqlite3
+db.sqlite3
+
+**/node_modules/
+
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.pot
+*.pyc
