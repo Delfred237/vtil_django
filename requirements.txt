@@ -1,5 +1,4 @@
 django
-django-tailwind[cookiecutter,honcho,reload]arrow==1.4.0
 whitenoise
 asgiref==3.11.1
 binaryornot==0.6.0
